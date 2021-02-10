@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-color: aqua;
+}
+/* choose */
+.choose {
+    width: 200px;
+    height: 50px;
+   position: relative;
+   top: 50%;
+   left: 50%;
+   margin: -25px 0 0 -100px;
+}
+.btn {
+    width: 200px;
+    height: 50px;
+    margin: 5px;
+    display: block;
+    background: palevioletred;
+    border-radius: 5px;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+.memory1 {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    perspective: 1000px;
+}
+#m1 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.memory1 {
+    display: none;
+}
+.cards {
+    width: calc(22% - 10px);
+    height: calc(25% - 10px);
+    position: relative;
+    margin: 5px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+.cards:active {
+    transform: scale(.96);
+    transition: transform .2s;
+}
+.flip {
+    transform: rotateY(180deg);
+}
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    background: rgb(125, 125, 224);
+    position: absolute;
+    backface-visibility: hidden;
+}
+.front {
+    transform: rotateY(180deg);
+}
+#m2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.memory2 {
+    width: 700px;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    perspective: 1000px;
+}
+.memory2 {
+    display: none;
+}
+.memory2 div {
+    width: 13%;
+    height: 15%;
+    margin-bottom: -5px;
+}
+#m3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.memory3 {
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    perspective: 1000px;
+}
+.memory3 {
+    display: none;
+}
+.memory3 div {
+    width: 10%;
+    height: 10%;
+}
+
+/* timer */
+.timer {
+    display: flex;
+    justify-content: center;
+}
+#showtime {
+    font-size: 30px;
+}
+.clickcounter {
+    display: flex;
+    justify-content: center;
+}
+#clicker {
+    font-size: 30px;
+}
+.pause {
+    display: flex;
+    justify-content: center;
+}
+.pausebtn {
+    width: 150px;
+    height: 40px;
+    color: white;
+    background: rgb(223, 245, 24);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.pause {
+    display: none;
+}
+
+/* modal */
+
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color:rgb(0,0,0,0.5);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.modalBox {
+    height: 200px;
+    width: 500px;
+    background-color: white;
+    border-radius:  10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+.modalBoxDiv button {
+   display: block;
+   margin-bottom: 4px;
+}
+.modalnoshow {
+    display: none;
+}
+
+.modalBoxGameOver {
+    height: 200px;
+    width: 500px;
+    background-color: white;
+    border-radius:  10px;
+    
+}
+
+/* dont share button */
+.dntshare {
+    width: 150px;
+    height: 70px;
+    color: white;
+    background: rgb(50, 93, 235);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+/*  */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 7px;
+  }
+  
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }

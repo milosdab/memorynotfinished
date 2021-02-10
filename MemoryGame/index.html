@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fc42741006.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="choose">
+        <button id="lvl1" class="btn">Level 1</button>
+        <button id="lvl2" class="btn">Level 2</button>
+        <button id="lvl3" class="btn">Level 3</button>
+    </div>
+    <div class="timer">
+        <div id="showtime"></div>
+    </div>
+    <div class="clickcounter">
+        <div id="clicker"></div>
+    </div>
+    <div class="pause">
+        
+            <button class="pausebtn" id="pbtn1">Pause</button>
+            <button class="pausebtn" id="pbtn2">Pause</button>
+            <button class="pausebtn" id="pbtn3">Pause</button>
+        
+    </div>
+    <div id="mod1"  >
+        
+    </div>
+    <div id="m1">
+        <section class="memory1">
+            <div class="cards" data-color="black">
+                <img class="front" src="images/black.png" alt="this should be an img">
+                <img class="back" src="images/cat.png" alt="this should be a cat">
+            </div>
+            <div class="cards" data-color="black">
+                <img class="front" src="images/black.png" alt="this should be an img">
+                <img class="back" src="images/cat.png" alt="this should be a cat">
+            </div>
+            <div class="cards" data-color="blue">
+                <img class="front" src="images/blue.png" alt="this should be an img">
+                <img class="back" src="images/cat.png" alt="this should be a cat">
+            </div>
+            <div class="cards" data-color="blue">
+                <img class="front" src="images/blue.png" alt="this should be an img">
+                <img class="back" src="images/cat.png" alt="this should be a cat">
+            </div>
+            <div class="cards" data-color="orange">
+                <img class="front" src="images/orange.png" alt="this should be an img">
+                <img class="back" src="images/cat.png" alt="this should be a cat">
+            </div>
+            <div class="cards" data-color="orange">
+                <img class="front" src="images/orange.png" alt="this should be an img">
+                <img class="back" src="images/cat.png" alt="this should be a cat">
+            </div>
+            <div class="cards" data-color="purple">
+                <img class="front" src="images/purple.png" alt="this should be an img">
+                <img class="back" src="images/cat.png" alt="this should be a cat">
+            </div>
+            <div class="cards" data-color="purple">
+                <img class="front" src="images/purple.png" alt="this should be an img">
+                <img class="back" src="images/cat.png" alt="this should be a cat">
+            </div>
+            <div class="cards" data-color="red">
+                <img class="front" src="images/red.png" alt="this should be an img">
+                <img class="back" src="images/cat.png" alt="this should be a cat">
+            </div>
+            <div class="cards" data-color="red">
+                <img class="front" src="images/red.png" alt="this should be an img">
+                <img class="back" src="images/cat.png" alt="this should be a cat">
+            </div>
+            <div class="cards" data-color="green">
+                <img class="front" src="images/green.png" alt="this should be an img">
+                <img class="back" src="images/cat.png" alt="this should be a cat">
+            </div>
+            <div class="cards" data-color="green">
+                <img class="front" src="images/green.png" alt="this should be an img">
+                <img class="back" src="images/cat.png" alt="this should be a cat">
+            </div>
+            <div class="cards" data-color="darkgreen">
+                <img class="front" src="images/darkgreen.png" alt="this should be an img">
+                <img class="back" src="images/cat.png" alt="this should be a cat">
+            </div>
+            <div class="cards" data-color="darkgreen">
+                <img class="front" src="images/darkgreen.png" alt="this should be an img">
+                <img class="back" src="images/cat.png" alt="this should be a cat">
+            </div>
+            <div class="cards" data-color="grey">
+                <img class="front" src="images/grey.png" alt="this should be an img">
+                <img class="back" src="images/cat.png" alt="this should be a cat">
+            </div>
+            <div class="cards" data-color="grey">
+                <img class="front" src="images/grey.png" alt="this should be an img">
+                <img class="back" src="images/cat.png" alt="this should be a cat">
+            </div>
+
+        </section>
+    </div>
+    <div id="m2">
+    <section class="memory2">
+        <div class="cards" data-color="black">
+            <img class="front" src="images/black.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="black">
+            <img class="front" src="images/black.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="blue">
+            <img class="front" src="images/blue.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="blue">
+            <img class="front" src="images/blue.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="orange">
+            <img class="front" src="images/orange.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="orange">
+            <img class="front" src="images/orange.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="purple">
+            <img class="front" src="images/purple.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="purple">
+            <img class="front" src="images/purple.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="red">
+            <img class="front" src="images/red.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="red">
+            <img class="front" src="images/red.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="green">
+            <img class="front" src="images/green.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="green">
+            <img class="front" src="images/green.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="darkgreen">
+            <img class="front" src="images/darkgreen.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="darkgreen">
+            <img class="front" src="images/darkgreen.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="grey">
+            <img class="front" src="images/grey.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="grey">
+            <img class="front" src="images/grey.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="rectangle">
+            <img class="front" src="images/rectangle.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="rectangle">
+            <img class="front" src="images/rectangle.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="square">
+            <img class="front" src="images/square.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="square">
+            <img class="front" src="images/square.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="triangle">
+            <img class="front" src="images/triangle.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="triangle">
+            <img class="front" src="images/triangle.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="circle">
+            <img class="front" src="images/circle.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="circle">
+            <img class="front" src="images/circle.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="heart">
+            <img class="front" src="images/heart.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="heart">
+            <img class="front" src="images/heart.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="arrowup">
+            <img class="front" src="images/arrowup.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="arrowup">
+            <img class="front" src="images/arrowup.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="arrowdown">
+            <img class="front" src="images/arrowdown.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="arrowdown">
+            <img class="front" src="images/arrowdown.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="star">
+            <img class="front" src="images/star.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="star">
+            <img class="front" src="images/star.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="lightning">
+            <img class="front" src="images/lightning.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="lightning">
+            <img class="front" src="images/lightning.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="olivegreen">
+            <img class="front" src="images/olivegreen.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+        <div class="cards" data-color="olivegreen">
+            <img class="front" src="images/olivegreen.png" alt="this should be an img">
+            <img class="back" src="images/cat.png" alt="this should be a cat">
+        </div>
+    </section>
+    </div>
+    <div id="m3">
+       
+            <section class="memory3">
+                <div class="cards" data-color="black">
+                    <img class="front" src="images/black.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="black">
+                    <img class="front" src="images/black.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="blue">
+                    <img class="front" src="images/blue.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="blue">
+                    <img class="front" src="images/blue.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="orange">
+                    <img class="front" src="images/orange.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="orange">
+                    <img class="front" src="images/orange.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="purple">
+                    <img class="front" src="images/purple.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="purple">
+                    <img class="front" src="images/purple.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="red">
+                    <img class="front" src="images/red.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="red">
+                    <img class="front" src="images/red.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="green">
+                    <img class="front" src="images/green.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="green">
+                    <img class="front" src="images/green.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="darkgreen">
+                    <img class="front" src="images/darkgreen.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="darkgreen">
+                    <img class="front" src="images/darkgreen.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="grey">
+                    <img class="front" src="images/grey.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="grey">
+                    <img class="front" src="images/grey.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="rectangle">
+                    <img class="front" src="images/rectangle.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="rectangle">
+                    <img class="front" src="images/rectangle.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="square">
+                    <img class="front" src="images/square.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="square">
+                    <img class="front" src="images/square.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="triangle">
+                    <img class="front" src="images/triangle.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="triangle">
+                    <img class="front" src="images/triangle.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="circle">
+                    <img class="front" src="images/circle.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="circle">
+                    <img class="front" src="images/circle.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="heart">
+                    <img class="front" src="images/heart.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="heart">
+                    <img class="front" src="images/heart.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="arrowup">
+                    <img class="front" src="images/arrowup.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="arrowup">
+                    <img class="front" src="images/arrowup.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="arrowdown">
+                    <img class="front" src="images/arrowdown.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="arrowdown">
+                    <img class="front" src="images/arrowdown.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="star">
+                    <img class="front" src="images/star.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="star">
+                    <img class="front" src="images/star.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="lightning">
+                    <img class="front" src="images/lightning.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="lightning">
+                    <img class="front" src="images/lightning.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="olivegreen">
+                    <img class="front" src="images/olivegreen.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="olivegreen">
+                    <img class="front" src="images/olivegreen.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="beige">
+                    <img class="front" src="images/beige.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="beige">
+                    <img class="front" src="images/beige.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="brown">
+                    <img class="front" src="images/brown.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="brown">
+                    <img class="front" src="images/brown.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="darkpink">
+                    <img class="front" src="images/darkpink.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="darkpink">
+                    <img class="front" src="images/darkpink.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="darkpurple">
+                    <img class="front" src="images/darkpurple.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="darkpurple">
+                    <img class="front" src="images/darkpurple.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="darkred">
+                    <img class="front" src="images/darkred.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="darkred">
+                    <img class="front" src="images/darkred.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="grayblue">
+                    <img class="front" src="images/grayblue.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="grayblue">
+                    <img class="front" src="images/grayblue.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="indigo">
+                    <img class="front" src="images/indigo.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="indigo">
+                    <img class="front" src="images/indigo.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="lightblue">
+                    <img class="front" src="images/lightblue.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="lightblue">
+                    <img class="front" src="images/lightblue.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="lightgreen">
+                    <img class="front" src="images/lightgreen.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="lightgreen">
+                    <img class="front" src="images/lightgreen.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="lightgrey">
+                    <img class="front" src="images/lightgrey.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="lightgrey">
+                    <img class="front" src="images/lightgrey.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="lightorange">
+                    <img class="front" src="images/lightorange.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="lightorange">
+                    <img class="front" src="images/lightorange.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="pink">
+                    <img class="front" src="images/pink.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="pink">
+                    <img class="front" src="images/pink.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="white">
+                    <img class="front" src="images/white.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="white">
+                    <img class="front" src="images/white.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="yellow">
+                    <img class="front" src="images/yellow.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+                <div class="cards" data-color="yellow">
+                    <img class="front" src="images/yellow.png" alt="this should be an img">
+                    <img class="back" src="images/cat.png" alt="this should be a cat">
+                </div>
+            </section>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
